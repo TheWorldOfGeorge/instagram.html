@@ -1,0 +1,347 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    .navigation {
+        background-color: white;
+        border-bottom: 1px solid black;
+        padding: 25px 20px 15px 20px;
+    }
+
+    .nav-container {
+        display: flex;
+        position: relative;
+        max-width: 1000px;
+        margin: auto;
+    }
+
+    .navBtn {
+        font-size: 25px;
+    }
+
+    .logoFont {
+        height: 35px;
+    }
+
+    .verticalLine {
+        width: 1px;
+        height: 28px;
+        background-color: #262626;
+        margin: 0px 16px;
+    }
+
+    .nav-group-container {
+        width: 132px;
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        right: 0px;
+    }
+
+    .post-head {
+        height: 60px;
+    }
+
+    .post-head-container {
+        display: flex;
+        position: relative;
+        padding: 16px;
+    }
+
+    .post-head-profile {
+        width: 32px;
+        height: 32px;
+    }
+
+    .post-head-profileImg {
+
+        width: 100%;
+        border-radius: 100%;
+    }
+
+    .post-head-name {
+        padding-left: 5px;
+        flex-grow: 1;
+    }
+
+    .post-contents {
+        height: 425px;
+    }
+
+    .post-infor {
+        height: 40px;
+    }
+
+    .post-infor-container {
+        display: flex;
+        position: relative;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+
+    .post-infor-pages {
+        flex-grow: 1;
+    }
+
+    .inforBtn {
+        width: 38px;
+        height: 38px;
+        font-size: 24px;
+        text-align: center;
+        line-height: 40px;
+    }
+
+    .post-comment {
+        height: 100px;
+        padding: 0px 10px;
+        font-size: 16px;
+    }
+
+    .post-comment-like {
+        display: flex;
+        align-items: center;
+    }
+
+    .post-comment-likeImg {
+        width: 20px;
+        border-radius: 100%;
+    }
+
+    .post-comment-likeNumber {
+        padding-left: 6px;
+    }
+
+    .post-comment-list {
+        padding-top: 5px;
+    }
+
+    .post-comment-item {
+        position: relative;
+    }
+
+    .post-comment-itemName {
+        font-weight: 500;
+    }
+
+    .post-comment-itemLike {
+        position: absolute;
+        right: 0px;
+    }
+
+    .commentBtn {
+        font-size: 100%;
+    }
+
+    .post-comment-date {
+        color: #999;
+        font-size: 10px
+    }
+
+    .body {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .post {
+        max-width: 600px;
+        margin: auto;
+    }
+</style>
+
+<body>
+    <div id="app">
+        <div class="navigation">
+            <div class="nav-container">
+                <span class="nav-logo">
+                    <i class="fab fa-instagram navBtn"></i>
+                    <span class="verticalLine"></span>
+                    <img class="logoFont" src="C:\Users\wtels\OneDrive\바탕 화면\봉투\인스타그램로고.png" alt="">
+                </span>
+                <span class="nav-group">
+                    <span class="nav-group-container">
+                        <span class="nav-explore">
+                            <i class="far fa-compass navBtn"></i>
+                        </span>
+                        <span class="nav-like">
+                            <i class="far fa-heart navBtn"></i>
+                        </span>
+                        <span class="nav-profile">
+                            <i class="far fa-user navBtn"></i>
+                        </span>
+                    </span>
+            </div>
+        </div>
+
+
+        <div class="post">
+            <div class="post-head">
+                <div class="post-head-container">
+                    <div class="post-head-profile">
+                        <img class="post-head-profileImg" src="C:\Users\wtels\OneDrive\바탕 화면\봉투\다운로드.jpg" alt="">
+                    </div>
+                    <div class="post-head-name">chowua_rowun</div>
+                    <div class="post-head-btn">...</div>
+                </div>
+            </div>
+
+            <div class="post-contents">
+                <img class="" src="C:\Users\wtels\OneDrive\바탕 화면\봉투\다운로드.jpg" alt="">
+            </div>
+
+            <div class="post-infor">
+                <div class="post-infor-container">
+                    <i class="far fa-heart inforBtn"></i>
+                    <i class="far fa-comment inforBtn"></i>
+                    <i class="fas fa-external-link-alt inforBtn"></i>
+
+                    <span class="post-infor-like"></span>
+                    <span class="post-infor-comment"></span>
+                    <span class="post-infor-share"></span>
+                    <span class="post-infor-pages"></span>
+                    <i class="far fa-bookmark inforBtn"></i>
+
+                    <span class="post-infor-bookmark"></span>
+                </div>
+            </div>
+
+            <div class="post-comment">
+                <div class="post-comment-like">
+                    <span class="post-comment-likeProfile">
+                        <img class="post-comment-likeImg" src="C:\Users\wtels\OneDrive\바탕 화면\봉투\다운로드.jpg" alt="">
+                    </span>
+                    <span class="post-comment-likeNumber">
+                        조지영님 외 801명이 좋아합니다.
+                    </span>
+                </div>
+                <div class="post-comment-list">
+                    <div class="post-comment-item">
+                        <span class="post-comment-itemName">
+                            chowua_rowun
+                        </span>
+                        <span class="post-comment-itemContent">리트리버가 최고임</span>
+                        <span class="post-comment-itemLike">
+                            <i class="far fa-heart commentBtn"></i>
+                        </span>
+                    </div>
+                    <div class="post-comment-item">
+                        <span class="post-comment-itemName">
+                            adorable_nan
+                        </span>
+                        <span class="post-comment-itemContent">기여웡</span>
+                        <span class="post-comment-itemLike">
+                            <i class="far fa-heart commentBtn"></i>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="post-comment-date">2시간전</div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+        var vue = new Vue({
+                el: '#app',
+
+                data: {
+                    // 여기에다 json을 일단 복붙하자.
+                    post: {
+                        "head": {
+                            "img": "image/profile1.jpg",
+                            "name": "cattac"
+                        },
+                        "contents": [{
+                            "img": "image/content1.jpeg"
+                        }],
+                        "infor": {
+                            "img": "image/cat_profile2.jpeg",
+                            "name": "개냐이",
+                            "number": 38,
+                            "bookmark": false
+                        },
+                        "comments": {
+                            [{
+                                    "name": "not_dog",
+                                    "content": "이런게 귀여워?",
+                                    "isLike": false
+                                },
+                                {
+                                    "name": "catholic",
+                                    "content": "졸렵다",
+                                    "isLike": false
+                                }
+                            ],
+                            "date": "1일전",
+                        }
+                    }
+                })
+        }
+    </script>
+    <img class="post-head-profileImg" src="image/profile1.jpg" alt="">
+    <!-- 
+  위 코드를 아래처럼 바꾸자 src -> :src로 바뀐 이유는
+  vue.js에 v-bind라는 vue.js의 기능이라 생각하자
+  Vue에 있는 데이터를 참조하게 할 수 있다.
+  위의 Vue를 확인하면 data 안에 있는 오브젝트를 볼 수 있다.
+  post : {
+    "head" : {
+      "img" : "image/profil1.jpg",
+      ...
+    },
+    ...
+  }
+  아래에 있는 post.haed.img는 위의 img의 value를 가리킨다.
+-->
+    <img class="post-head-profileImg" :src="post.head.img" alt="">
+
+    <div class="post-head-name">cattac</div>
+    <!-- 위에를 아래 콧수염을 써서 바꿔보자 -->
+    <div class="post-head-name">{{ post.head.name}}</div>
+
+    <!-- post.cotents는 배열이다. 배열에 있는 아이템을 하나씩 출력하기 위해선
+    for문을 써야한다. vue.js에선 v-for라는 기능을 쓴다.
+    그러면 post.contents의 item들이 content로 참조가능하다.      
+-->
+    <div class="post-contents">
+        <div class="post-contents-container" v-for="content in post.contents">
+            <img class="post-comtentsImg" :src="content.img" alt="">
+        </div>
+    </div>
+
+    <!-- 아래에 있는 코드들도 바꾼다. 다 완성된 코드는 vue2.html을 참고하도록하자 -->
+
+    <img class="post-comment-likeImg" src="image/cat_profile2.jpeg" alt="">
+
+    <span class="post-comment-likeProfile">
+        <img class="post-comment-likeImg" :src="post.infor.img" alt="">
+    </span>
+    <span class="post-comment-likeNumber">
+        {{post.infor.name}}님 외 {{post.infor.number}}명이 좋아합니다.
+    </span>
+
+    <!-- 
+  comment는 많이 바뀐다. 전에는 item을 두 번 복사해서 했을 텐데
+  이번엔 반목문으로 바꾸어서 코드를 줄여보자
+-->
+    <div class="post-comment-list">
+        <div class="post-comment-item" v-for="comment in post.comments">
+            <!-- {{}} 대신 v-text라고 쓰면 알아서 텍스트가 요소에 삽입된다. -->
+            <span class="post-comment-itemName" v-text="comment.name">
+            </span>
+            <span class="post-comment-itemContent" v-text="comment.content"></span>
+            <span class="post-comment-itemLike">
+                <i class="far fa-heart commentBtn"></i>
+            </span>
+        </div>
+    </div>
+
+    <div class="post-comment-date" v-text="post.date"></div>
+
+</body>
+
+</html>
